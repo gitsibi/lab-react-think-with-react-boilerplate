@@ -13,6 +13,22 @@
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script src="./app.js"></script>
+        <script type="text/babel">
+            class ReactContainer extends React.Component {
+              render() {
+                return (
+                    <div>
+                        Hello! Welcome to Kalvium   
+                        <div>            
+                           Let's rock and roll - this is babel
+                        </div>
+                    </div>
+               );
+           }  
+        }
+        const c4 = document.getElementById('react-container');
+        ReactDOM.render(<ReactContainer/>, c4); 
+        </script>
     </body>
 </body>
 </html>
